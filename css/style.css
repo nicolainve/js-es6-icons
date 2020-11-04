@@ -5,6 +5,55 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
     font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    font-family: 'Itim', cursive;
+    padding: 20px 300px;
+    font-size: 50px;
+    background: #f7770f;
+}
+
+.search {
+    padding: 10px;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    background: #0f7bf7;
+}
+
+.search select {
+    margin-left: 20px;
+}
+
+.icons {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 20px;
+    background: rgb(127, 148, 175);
+}
+
+.icons .icon {
+    flex-basis: calc(100% / 6 - 20px);
+    padding: 20px;
+    margin: 20px 10px;
+    background: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 14px;
+}
+
+.icons .icon i {
+    font-size: 40px;
+    margin-bottom: 20px;
 }
